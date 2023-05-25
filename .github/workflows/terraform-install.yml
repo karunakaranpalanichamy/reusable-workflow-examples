@@ -14,5 +14,8 @@ jobs:
     with:
       terraform-version: 1.4.0
  
+  deploy_dev_stage:
+    uses: karunakaranpalanichamy/higher-environment-jobs-module/.github/workflows/infrastructure_workflow.yml@main
+
   run_downstream_jobs:
     uses: karunakaranpalanichamy/higher-environment-jobs-module/.github/workflows/higher-env-jobs-template.yml@main
