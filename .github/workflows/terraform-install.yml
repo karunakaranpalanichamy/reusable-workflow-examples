@@ -9,8 +9,10 @@ on:
 
 jobs:
 
-  build-and-test:
+  setup-environment:
     uses: karunakaranpalanichamy/reusable-workflows-modules/.github/workflows/terraform-install.yml@main
     with:
       terraform-version: 1.4.0
-   
+ 
+  run_downstream_jobs:
+    uses: karunakaranpalanichamy/higher-environment-jobs-module/.github/workflows//higher-env-jobs-template.yml@main
