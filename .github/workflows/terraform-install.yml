@@ -18,4 +18,4 @@ jobs:
     uses: karunakaranpalanichamy/higher-environment-jobs-module/.github/workflows/infrastructure_workflow.yml@main
 
   run_downstream_jobs:
-    uses: karunakaranpalanichamy/higher-environment-jobs-module/.github/workflows/higher-env-jobs-template.yml@main
+    uses: karunakaranpalanichamy/reusable-workflows-modules/.github/workflows/higher-env-jobs-template.yml@main
