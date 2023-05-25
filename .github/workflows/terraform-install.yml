@@ -1,0 +1,16 @@
+# This CI workflow can be triggered by PR creation or code push in PR, or manually using workflow dispatch.
+
+name: CI workflow for installing terraform using terraform-install-template
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main,master ]
+
+jobs:
+
+  build-and-test:
+    uses: karunakaranpalanichamy/reusable-workflows-modules/.github/workflows/terraform-install.yml@main
+    with:
+      terraform-version: 1.4.0
+   
